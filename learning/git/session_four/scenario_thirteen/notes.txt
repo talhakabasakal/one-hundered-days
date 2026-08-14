@@ -1,2 +1,3 @@
 First rebase example
 Second rebase example
+Third rebase example

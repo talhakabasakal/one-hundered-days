@@ -1,0 +1,11 @@
+TR 
+
+Gereksinim toplama, çözüm geliştirmeden önce gerçek problemi anlamaya odaklanır. 
+Belirsiz istekleri doğru sorular sorarak net, anlaşılır ve ölçülebilir gereksinimlere dönüştürmeliyiz. 
+Temel amaç, **nasıl geliştireceğimize karar vermeden önce kullanıcının neye ihtiyacı olduğunu anlamaktır.**
+
+EN
+
+Requirements gathering is about understanding the real problem before developing a solution. 
+We should ask clear questions, identify constraints, and turn ambiguous requests into specific and measurable requirements. 
+The goal is to understand **what the user needs before deciding how to build it**.

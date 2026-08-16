@@ -1,0 +1,7 @@
+I would use a Hybrid approach for the hotel booking system.
+For critical areas such as payments, reservation consistency, 
+and security, I would use a Waterfall-oriented approach so that requirements,
+risks, and test scenarios are clearly defined before release.
+This can reduce the chance of serious production issues and help
+prevent customer dissatisfaction. After the core system is stable, 
+I would use Agile iterations to improve the product based on user feedback and new feature requests.

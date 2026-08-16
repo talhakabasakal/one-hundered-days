@@ -1,0 +1,11 @@
+TR
+
+SDLC, bir yazılım fikrinin doğrudan kodlanmaya başlanması yerine gereksinimlerinin belirlenmesi, 
+tasarlanması, geliştirilmesi, test edilmesi, yayınlanması ve bakımının yapılmasını kapsayan sistematik bir süreçtir. 
+Yazılım ekiplerinin projeyi daha planlı, kontrollü ve kaliteli bir şekilde geliştirmesini sağlar.
+
+EN
+
+SDLC is a structured process for developing software from an idea to a finished product. 
+It includes requirements, design, development, testing, deployment, and maintenance. 
+It helps teams build software in a planned, controlled, and reliable way.

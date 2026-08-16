@@ -1,0 +1,95 @@
+1. Context Diagram
+
+                    ┌──────────────┐
+                    │   Customer   │
+                    └──────┬───────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │   HOTEL BOOKING     │
+                │       SYSTEM        │
+                └─────────────────────┘
+                   │       │       │
+                   ▼       ▼       ▼
+              Payment    Email    SMS
+              Provider  Service  Service
+
+2. Component Sketch
+
+Mobile / Web UI
+       ↓
+      API
+       ↓
+     Backend
+    ↙   ↓    ↘
+ Auth  Booking  Payment
+    \    |     /
+       Database
+
+3. Data Sketch
+
+USER
+ id
+ name
+ email
+
+   │
+   │ makes
+   ▼
+
+RESERVATION
+ id
+ user_id
+ room_id
+ check_in
+ check_out
+ status
+
+   │
+   │ reserves
+   ▼
+
+ROOM
+ id
+ hotel_id
+ room_number
+ price
+
+   │
+   │ belongs to
+   ▼
+
+HOTEL
+ id
+ name
+ location
+
+ 4. Trade-off
+
+Monolith
+
+             Backend
+        ┌─────────────┐
+        │ Auth        │
+        │ Hotels      │
+        │ Booking     │
+        │ Payment     │
+        │ Users       │
+        └─────────────┘
+
+Microservice
+
+Auth Service
+Booking Service
+Hotel Service
+Payment Service
+Notification Service
+
+Context Diagram dış dünyayla ilişkileri, 
+Component Sketch sistemin parçalarını, 
+Data Sketch verilerin ilişkilerini gösterir; 
+Trade-off ise mimari kararların avantaj ve dezavantajlarını değerlendirmektir.
+
+Microservice mimarisi, sistemin bölümlere ayrılmasını ve
+ileride ekip büyüdüğünde servislerin bağımsız geliştirilmesini kolaylaştırır. 
+Ancak küçük bir ekip için başlangıçta daha fazla operasyonel karmaşıklık oluşturabilir.

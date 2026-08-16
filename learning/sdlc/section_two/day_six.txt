@@ -1,0 +1,29 @@
+User Story
+
+Acceptance Criteria
+
+Given → Başlangıç durumu
+When → Kullanıcı ne yaptı?
+Then → Sistem ne yapmalı?
+
+Epic
+
+EPIC: Hotel Reservation
+
+├── Search Hotels
+├── View Hotel
+├── Check Room Availability
+├── Select Room
+├── Create Reservation
+├── Make Payment
+└── Cancel Reservation
+
+Prioritization
+
+1. Check Room Availability
+2. Create Reservation
+3. Payment
+4. Reservation Confirmation
+5. Cancellation
+6. Reviews
+7. Favorites

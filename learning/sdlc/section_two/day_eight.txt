@@ -1,0 +1,23 @@
+Customer
+   │
+   ▼
+Mobile / Web
+   │
+   ▼
+API Gateway
+   │
+   ├── Auth Service
+   ├── Hotel Service
+   ├── Booking Service
+   ├── Payment Service ──→ Payment Provider
+   └── Notification Service ──→ Email/SMS
+              │
+              ▼
+           Database
+
+Ready for Development
+
+Mini Spec; problem, kullanıcılar, user story'ler, 
+acceptance criteria, constraints ve sistem tasarımını 
+tek bir dokümanda birleştirerek projenin geliştirmeye 
+hazır olup olmadığını belirlememizi sağlar.

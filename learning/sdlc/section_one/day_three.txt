@@ -1,0 +1,8 @@
+Waterfall : Plan everything → Build everything → Test everything → Release
+
+Agile: Plan a little → Build → Test → Release/Review → Feedback → Repeat
+
+I would use a Waterfall-oriented approach during the initial development when 
+requirements and planning need to be clearly defined. After the product is released, 
+I would use Agile to improve the product through short iterations, user feedback, and changing requirements. 
+This creates a hybrid approach that combines structured planning with continuous improvement.

@@ -1,0 +1,104 @@
+Release, CI, Rollback, Smoke Test ve Changelog.
+
+1. Release Readiness
+
+✓ Unit testler başarılı
+✓ Integration testler başarılı
+✓ Kritik E2E testleri başarılı
+✓ Code review tamamlandı
+✓ Environment variables kontrol edildi
+✓ Database migration hazır
+✓ Backup alındı
+✓ Rollback planı hazır
+✓ Production deployment yapıldı
+✓ Smoke test başarılı
+
+2. CI — Continuous Integration
+
+Developer
+    ↓
+Push / Pull Request
+    ↓
+CI Pipeline
+    ├── Build
+    ├── Lint
+    ├── Unit Tests
+    └── Integration Tests
+           ↓
+      Başarılı mı?
+       ↙       ↘
+     EVET      HAYIR
+      ↓          ↓
+   Merge     Merge Block
+
+3. Rollback
+
+v1.2.0
+↓
+Production'a çıktı
+↓
+Payment bug ortaya çıktı
+↓
+Kullanıcılar ödeme yapamıyor 🚨
+
+v1.2.0 ❌
+   ↓
+ROLLBACK
+   ↓
+v1.1.0 ✅
+
+4. Smoke Test
+
+Uygulama açılıyor mu?          ✓
+Login çalışıyor mu?            ✓
+Otel arama çalışıyor mu?       ✓
+Rezervasyon yapılabiliyor mu?  ✓
+Ödeme çalışıyor mu?            ✓
+
+5. Changelog
+
+Version 1.2.0
+
+Added
+- Online payment support
+- Reservation cancellation
+
+Fixed
+- Room availability issue
+- Login validation bug
+
+Improved
+- Hotel search performance
+
+Development
+     ↓
+Pull Request
+     ↓
+CI
+ ┌─────────────┐
+ │ Build       │
+ │ Lint        │
+ │ Tests       │
+ └─────────────┘
+     ↓
+   Merge
+     ↓
+Release Checklist
+     ↓
+Deployment
+     ↓
+Smoke Test
+     ↓
+Production ✅
+
+Sorun varsa
+     ↓
+Rollback ↩
+
+Kısa özet
+
+Release öncesinde testler, migration, güvenlik ve rollback planı kontrol edilir. 
+CI, kod değişikliklerini otomatik build ve test ederek kalite kontrolü sağlar. 
+Deployment sonrasında smoke test ile kritik fonksiyonlar kontrol edilir; 
+ciddi bir problem oluşursa rollback ile önceki stabil sürüme dönülür. 
+Changelog ise her sürümde yapılan önemli değişiklikleri kayıt altına alır.

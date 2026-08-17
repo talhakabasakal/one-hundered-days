@@ -1,0 +1,51 @@
+Code Review
+
+feature/payment
+      ↓
+Kodlama
+      ↓
+Test
+      ↓
+Commit
+      ↓
+Push
+      ↓
+Pull Request
+      ↓
+CODE REVIEW
+      ↓
+Merge
+      ↓
+main
+
+Blocking Issue
+
+Blocking Issue → Düzeltilmeden merge edilmemesi gereken problem.
+
+PR Hygiene
+
+Title:
+Add online payment flow
+
+Description:
+- Added payment screen
+- Added payment API integration
+- Added payment validation
+- Added error handling
+
+Testing:
+- Successful payment tested
+- Failed payment tested
+- Invalid card tested
+
+Related:
+Issue #42
+
+Screenshots:
+[Payment Screen]
+
+Code Review yalnızca hata bulmak için değil; 
+kod kalitesini artırmak, riskleri merge öncesinde 
+yakalamak ve ekip içinde bilgi paylaşımını sağlamak için yapılır. 
+İyi bir PR ise değişikliğin ne olduğunu, 
+neden yapıldığını ve nasıl test edildiğini açıkça anlatmalıdır.

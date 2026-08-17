@@ -1,0 +1,84 @@
+1. Slice Work — İşi küçük parçalara bölmek
+
+Reservation Feature
+
+├── UI
+│   ├── Tarih seçimi
+│   ├── Oda seçimi
+│   └── Rezervasyon onay ekranı
+│
+├── Backend
+│   ├── Oda müsaitlik kontrolü
+│   ├── Rezervasyon oluşturma
+│   └── Rezervasyon doğrulama
+│
+├── Database
+│   └── Reservation yapısı
+│
+├── Tests
+│   ├── Unit tests
+│   └── Integration tests
+│
+└── Documentation
+    └── API documentation
+
+2. Branch Mentality
+
+main
+ │
+ └── feature/reservation
+          │
+          ├── Add reservation model
+          ├── Add availability validation
+          ├── Add reservation endpoint
+          └── Add reservation tests
+                    │
+                    ▼
+               Pull Request
+                    │
+                  Review
+                    │
+                  Merge
+                    ▼
+                   main
+
+Add reservation model
+
+Add room availability check
+
+Add reservation endpoint
+
+Add reservation tests
+
+3. Definition of Done — DoD
+
+✓ Kod tamamlandı
+✓ Acceptance criteria karşılanıyor
+✓ Unit testler geçiyor
+✓ Integration testler geçiyor
+✓ Lint hatası yok
+✓ Code review tamamlandı
+✓ Gereken dokümantasyon güncellendi
+✓ Kritik bug bulunmuyor
+
+4. Spike vs Build
+
+Bilmiyoruz
+    ↓
+SPIKE
+    ↓
+Araştır
+    ↓
+Küçük prototype / PoC
+    ↓
+Riskleri öğren
+    ↓
+Teknik karar
+    ↓
+BUILD
+    ↓
+Gerçek implementation
+
+Implementation aşamasında işleri küçük ve yönetilebilir parçalara böler, 
+güvenli branch'lerde geliştirir, küçük commitlerle ilerler, 
+Definition of Done ile tamamlanma kriterlerini belirler ve belirsiz teknik konularda geliştirmeden önce Spike yaparız.

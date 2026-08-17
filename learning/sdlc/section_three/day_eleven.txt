@@ -1,0 +1,89 @@
+Testing in the Life Cycle
+
+1. Unit Test
+
+calculatePrice(
+  pricePerNight: 1000,
+  nights: 3
+)
+
+Expected → 3000 TL
+
+1000 × 3 = 3000 TL mi?
+
+2. Integration Test
+
+Reservation API
+      ↓
+Booking Service
+      ↓
+Database
+
+POST /reservations
+       ↓
+Backend isteği işledi
+       ↓
+Database'e reservation kaydedildi
+
+3. End-to-End (E2E) Test
+
+Kullanıcı giriş yaptı
+       ↓
+Otel aradı
+       ↓
+Oda seçti
+       ↓
+Tarih seçti
+       ↓
+Rezervasyon oluşturdu
+       ↓
+Ödeme yaptı
+       ↓
+Rezervasyon onaylandı
+
+| Test            | Sorduğumuz soru                         |
+| --------------- | --------------------------------------- |
+| **Unit**        | Bu küçük kod parçası çalışıyor mu?      |
+| **Integration** | Bu parçalar birlikte çalışıyor mu?      |
+| **E2E**         | Kullanıcının bütün işlemi çalışıyor mu? |
+
+
+4. Bug Life Cycle
+
+Bug Report
+    ↓
+Triage
+    ↓
+Fix
+    ↓
+Verify
+    ↓
+Close
+
+Critical: Ödeme alınıyor ama rezervasyon oluşmuyor. 🔴
+
+Low: Buton üzerindeki yazı birkaç pixel kaymış. 🟢
+
+5. Quality ≠ Only QA
+
+Kodunu test etmesi
+↓
+Unit test yazması
+↓
+Edge case'leri düşünmesi
+↓
+Error handling yapması
+↓
+Lint/static analysis kontrolü
+↓
+PR açması
+↓
+Code review
+
+Kısa özet
+
+Unit test tek bir kod parçasını, 
+Integration test sistem parçalarının birlikte çalışmasını, 
+E2E test ise kullanıcının baştan sona gerçekleştirdiği akışı test eder. 
+Bir bug bulunduğunda report → triage → fix → verify → close sürecinden geçer. 
+Yazılım kalitesi yalnızca QA'in değil, tüm geliştirme ekibinin sorumluluğudur.

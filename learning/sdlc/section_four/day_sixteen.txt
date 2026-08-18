@@ -1,0 +1,149 @@
+Capstone
+
+1. Pick a Feature
+
+As a customer, I want to reserve and pay for a hotel room online so that I can complete my booking before arriving at the hotel.
+
+2. Design
+
+Customer
+   ↓
+Mobile / Web
+   ↓
+API
+   ↓
+┌──────────────────────────┐
+│ Authentication           │
+│ Hotel / Room             │
+│ Reservation              │
+│ Payment                  │
+│ Notification             │
+└──────────────────────────┘
+   ↓                ↓
+Database       Payment Provider
+                    ↓
+                 Bank
+
+3. Build
+
+Reservation
+├── Room availability
+├── Reservation API
+├── Reservation UI
+└── Database
+
+Payment
+├── Payment UI
+├── Payment provider integration
+├── Payment verification
+└── Error handling
+
+Notification
+└── Reservation confirmation
+
+Branch
+   ↓
+Development
+   ↓
+Small Commits
+   ↓
+Tests
+   ↓
+Pull Request
+   ↓
+Code Review
+   ↓
+Merge
+
+4. Test Plan
+
+Unit
+
+Integration
+
+E2E
+
+Otel ara
+ ↓
+Oda seç
+ ↓
+Rezervasyon oluştur
+ ↓
+Ödeme yap
+ ↓
+Ödeme doğrulansın
+ ↓
+Rezervasyon onaylansın
+ ↓
+Onay mesajı gelsin
+
+5. Release
+
+CI
+ ↓
+Build
+ ↓
+Automated Tests
+ ↓
+Staging
+ ↓
+E2E / Smoke Test
+ ↓
+Production
+ ↓
+Smoke Test
+ ↓
+Monitoring
+
+6. Operations
+
+Payment error rate
+Reservation failure rate
+API response time
+HTTP 5xx
+Database health
+CPU / RAM
+Logs
+
+Detect → Mitigate → Fix → Verify → Review
+
+7. Model Choice
+
+Hybrid
+
+“Sadece kod yazabiliyor musun?” değil, “Bir özelliği fikirden production'a ve production sonrasına kadar düşünebiliyor musun?”
+
+IDEA
+ ↓
+REQUIREMENTS
+ ↓
+USER STORIES
+ ↓
+ACCEPTANCE CRITERIA
+ ↓
+DESIGN / ARCHITECTURE
+ ↓
+IMPLEMENTATION
+ ↓
+CODE REVIEW
+ ↓
+TESTING
+ ↓
+CI
+ ↓
+STAGING
+ ↓
+RELEASE
+ ↓
+PRODUCTION
+ ↓
+MONITORING
+ ↓
+MAINTENANCE
+ ↓
+FEEDBACK
+ ↓
+RETROSPECTIVE
+ ↓
+NEW REQUIREMENTS
+ ↺

@@ -1,0 +1,91 @@
+Deployment ve Environments
+
+1. Environment
+
+LOCAL / DEV
+     ↓
+STAGING
+     ↓
+PRODUCTION
+
+Local / Development: Developer'ın geliştirme yaptığı ortamdır. Kendi bilgisayarında çalıştırdığın backend buna örnek.
+
+Staging: Production'a çok benzeyen ama gerçek kullanıcıların kullanmadığı test ortamıdır. Release öncesi son kontroller burada yapılır.
+
+Production: Gerçek kullanıcıların kullandığı canlı sistemdir.
+
+LOCAL
+Developer ödeme özelliğini geliştiriyor.
+        ↓
+STAGING
+Gerçek sisteme benzeyen ortamda
+test ödemesi yapılıyor.
+        ↓
+PRODUCTION
+Gerçek müşteriler ödeme yapıyor.
+
+2. Promotion Path
+
+Code
+ ↓
+Local / Dev
+ ↓
+Tests
+ ↓
+Staging
+ ↓
+Integration / E2E / Smoke Tests
+ ↓
+Approval
+ ↓
+Production
+
+3. Config Awareness
+
+DEV
+
+API_URL=dev-api.example.com
+PAYMENT_MODE=test
+DATABASE=dev_database
+
+PRODUCTION
+
+API_URL=api.example.com
+PAYMENT_MODE=live
+DATABASE=production_database,
+
+4. Feature Flag
+
+Yeni Payment System
+
+%5 kullanıcı → ON
+%95 kullanıcı → OFF
+
+5. Hotfix
+
+Production Bug
+      ↓
+Hotfix Branch
+      ↓
+Fix
+      ↓
+Minimum gerekli testler
+      ↓
+Staging
+      ↓
+Verify
+      ↓
+Production
+      ↓
+Smoke Test
+
+Development ortamında geliştirme yapılır, 
+staging ortamında production'a benzer koşullarda 
+doğrulama yapılır ve ardından production'a deployment gerçekleştirilir. 
+Ortamların API URL, database, secrets ve feature flag gibi configuration 
+değerleri farklı olabilir. Kritik production hatalarında bile hotfix mümkün 
+olduğunca test ve doğrulama süreçlerinden geçirilmelidir.
+
+Development → Staging → Production
+
+“Acil olması, test edilmemesi gerektiği anlamına gelmez.”

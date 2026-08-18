@@ -1,0 +1,75 @@
+Retrospective ve Continuous Improvement
+
+Retrospective (Retro)
+
+Ne iyi gitti? Ne kötü gitti? Bir sonraki sefer neyi değiştireceğiz?
+
+Went Well
+→ Neler iyi gitti?
+
+Improve
+→ Neleri daha iyi yapabiliriz?
+
+Actions
+→ Bunun için somut olarak ne yapacağız?
+
+Actionable Outcome
+
+Problem → Aksiyon → Sorumlu → Zaman
+
+Cycle Time
+
+Reservation Feature
+
+Development başladı
+        ↓
+       1 gün
+        ↓
+Backend
+        ↓
+       2 gün
+        ↓
+Frontend
+        ↓
+       1 gün
+        ↓
+Testing
+        ↓
+       1 gün
+        ↓
+DONE
+
+Cycle Time ≈ 5 gün
+
+Escaped Defect
+
+Feedback Loop
+
+Production
+    ↓
+User Feedback
+    ↓
+Analysis
+    ↓
+New Requirement
+    ↓
+User Story
+    ↓
+Design
+    ↓
+Implementation
+    ↓
+Testing
+    ↓
+Release
+    ↓
+Production
+    ↓
+Yeni Feedback...
+
+Build → Measure → Learn → Improve → Repeat
+
+Retrospective, ekiplerin geçmiş geliştirme süreçlerini değerlendirerek nelerin iyi gittiğini, 
+nelerin iyileştirilmesi gerektiğini ve hangi aksiyonların alınacağını belirlemesini sağlar. 
+Cycle Time geliştirme süresini, Escaped Defect ise testlerden kaçıp production'a ulaşan hataları ölçmeye yardımcı olur. 
+Kullanıcı feedback'leri yeni gereksinimlere dönüştürülerek SDLC döngüsü sürekli devam eder.

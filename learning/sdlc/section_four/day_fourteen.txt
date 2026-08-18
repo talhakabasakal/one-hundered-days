@@ -1,0 +1,67 @@
+Maintenance, Monitoring ve Incident Management.
+
+1. Maintenance
+
+Corrective Maintenance — Düzeltici bakım: Production'daki bir hatayı düzeltmek.
+
+Perfective Maintenance — İyileştirici bakım: Çalışan sistemi daha iyi hale getirmek.
+
+Preventive Maintenance — Önleyici bakım: Henüz problem oluşmadan gelecekte oluşabilecek sorunları azaltmak.
+
+| Tür        | Amaç                      |
+| ---------- | ------------------------- |
+| Corrective | Mevcut hatayı düzelt      |
+| Adaptive   | Değişen ortama uyum sağla |
+| Perfective | Sistemi iyileştir         |
+| Preventive | Gelecekteki problemi önle |
+
+2. Monitoring
+
+CPU Usage
+Memory Usage
+Response Time
+Request Count
+Error Rate
+HTTP 5xx Errors
+Database Connections
+Disk Usage
+
+3. Incident
+
+Incident, production'daki hizmeti etkileyen beklenmedik problem veya kesintidir.
+
+DETECT
+↓
+Monitoring alarm verdi
+
+MITIGATE
+↓
+Kullanıcı etkisini azalt
+
+FIX
+↓
+Sorunun kaynağını bul ve düzelt
+
+VERIFY
+↓
+Sistemin düzeldiğini doğrula
+
+REVIEW
+↓
+Neden olduğunu ve tekrarını
+nasıl önleyeceğimizi araştır
+
+4. Post-Incident Review
+
+blameless
+
+Production'a çıkan yazılımlar corrective, adaptive, perfective ve preventive maintenance ile yaşamaya devam eder. 
+Monitoring sayesinde sistemin performansı ve hataları takip edilir. 
+Bir incident oluştuğunda detect → mitigate → fix → verify → review süreci uygulanır ve 
+post-incident review ile problemin tekrar yaşanmaması için süreç iyileştirilir.
+
+Monitoring ≠ sadece log bakmak
+
+Mitigation ≠ kalıcı fix
+
+Incident review ≠ suçlu developer aramak
